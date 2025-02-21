@@ -96,6 +96,9 @@ button{
     position: relative;
 }
 
+.header-item-link.current {
+    color: #404bbf;
+}
 .header-item-link::after {
     content: "";
     position: absolute;
@@ -167,6 +170,7 @@ button{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-title {
     font-weight: 700;
@@ -195,6 +199,7 @@ button{
     height: 56px;
     margin: 0 auto;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover, 
 .hero-button:focus {
@@ -256,6 +261,9 @@ button{
 .ourteam {
     background: #f4f4fd;
     padding: 120px 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 .members {
     font-weight: 700;
@@ -310,7 +318,6 @@ button{
     justify-content: center;
     gap: 24px;
 }
-
 .team-item-icons {
     width: 40px;
     height: 40px;
@@ -365,6 +372,7 @@ button{
     gap: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-portfolio-list {
     width: calc((100% - 48) / 3);
@@ -381,6 +389,7 @@ button{
     position: relative;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .our-portfolio-wrap:hover .wrap-portfolio {
@@ -436,6 +445,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     color: #4d5ae5;
     margin-bottom: 16px;
     display: inline-block;
+    
 }
 .footer-logo-text {
     color: #f4f4fd;
@@ -451,6 +461,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     justify-content: center;
     margin-top: 20px;
     align-items: center;
+   
 }
 .footer-media {
     font-weight: 500;
@@ -465,7 +476,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .f-team-item-icons {
@@ -482,11 +493,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .f-team-link-icons:hover,
 .f-team-link-icons:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 
 .f-team-item-icons .f-icons-svg {
